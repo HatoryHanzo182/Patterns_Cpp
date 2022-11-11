@@ -1,7 +1,6 @@
 #include "Header.h"
 
 // In this pattern, examples of creating types of cars.
-
 int main()
 {
 	IShop* creator;
