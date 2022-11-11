@@ -127,10 +127,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EnglandCar.cpp" />
+    <ClCompile Include="EnglandFactory.cpp" />
+    <ClCompile Include="GermanEngine.cpp" />
+    <ClCompile Include="JapaneseEngine.cpp" />
+    <ClCompile Include="PolandCar.cpp" />
+    <ClCompile Include="PolandFactory.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EnglandCar.h" />
+    <ClInclude Include="EnglandFactory.h" />
+    <ClInclude Include="GermanEngine.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="ICar.h" />
+    <ClInclude Include="IEngine.h" />
+    <ClInclude Include="IFactory.h" />
+    <ClInclude Include="JapaneseEngine.h" />
+    <ClInclude Include="PolandCar.h" />
+    <ClInclude Include="PolandFactory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
