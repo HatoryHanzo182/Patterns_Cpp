@@ -1,21 +1,17 @@
 #pragma once
-#include "Header.h"
+#include "Snapshot.h"
 
-namespace Memento
+class Person
 {
-	class Person
-	{
-	private:
-		string _name;
-		int _age;
-		string _phone;
-		string _address;
-	public:
-		Person();
-		Person(const Person&);
+private:
+    string _name;
+    int _age;
+    string _phone;
+    string _address;
+public:
+    Person();
+    Person(const Person&);
 
-		void SetDataPerson(string, int, string, string);
-		Snapshot CreateSnap();
-
-	};
-}
+    void SetDataPerson(string, int, string, string);
+    Snapshot CreateSnap();
+};

@@ -1,6 +1,6 @@
 #include "Header.h"
 
-Memento::Snapshot::Snapshot(Person* pers, string name, int age, string phone, string address)
+Snapshot::Snapshot(Person* pers, string name, int age, string phone, string address)
 {
 	_pers = pers;
 	_name = name;
@@ -9,4 +9,4 @@ Memento::Snapshot::Snapshot(Person* pers, string name, int age, string phone, st
 	_address = address;
 }
 
-void Memento::Snapshot::Restore() { _pers->SetDataPerson(_name, _age, _phone, _address); }
+void Snapshot::Restore() { _pers->SetDataPerson(_name, _age, _phone, _address); }

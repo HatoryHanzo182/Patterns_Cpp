@@ -1,6 +1,6 @@
 #include "Header.h"
 
-Memento::Person::Person()
+Person::Person()
 {
 	_name = string();
 	_age = int();
@@ -8,7 +8,7 @@ Memento::Person::Person()
 	_address = string();
 }
 
-Memento::Person::Person(const Person& pers)
+Person::Person(const Person& pers)
 {
 	this->_name = pers._name;
 	this->_age = pers._age;
@@ -16,7 +16,7 @@ Memento::Person::Person(const Person& pers)
 	this->_address = pers._address;
 }
 
-void Memento::Person::SetDataPerson(string name, int age, string phone, string address)
+void Person::SetDataPerson(string name, int age, string phone, string address)
 {
 	_name = name;
 	_age = age;
@@ -24,7 +24,4 @@ void Memento::Person::SetDataPerson(string name, int age, string phone, string a
 	_address = address;
 }
 
-Memento::Snapshot Memento::Person::CreateSnap()
-{
-	return Snapshot(this, _name, _age, _phone, _address);
-}
+Snapshot Person::CreateSnap() { return Snapshot(this, _name, _age, _phone, _address); }
