@@ -1,7 +1,7 @@
 #pragma once
 #include "Header.h"
 
-
+class Person;
 
 class Snapshot
 {
