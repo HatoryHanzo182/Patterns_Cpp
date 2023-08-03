@@ -130,12 +130,14 @@
     <ClCompile Include="Exchange.cpp" />
     <ClCompile Include="ExchangeMemento.cpp" />
     <ClCompile Include="Memento.cpp" />
+    <ClCompile Include="Memory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exchange.h" />
     <ClInclude Include="ExchangeMemento.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="Memento.h" />
+    <ClInclude Include="Memory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

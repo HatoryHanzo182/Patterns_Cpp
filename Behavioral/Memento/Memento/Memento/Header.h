@@ -6,5 +6,6 @@
 using namespace std;
 
 #include "Memento.h"
-#include "Exchange.h"
 #include "ExchangeMemento.h"
+#include "Exchange.h"
+#include "Memory.h"
