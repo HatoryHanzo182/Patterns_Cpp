@@ -1,14 +1,14 @@
 #pragma once
 #include "Header.h"
 
-class Memory
+class Memory final  // State storage class.
 {
 private:
-	stack<Memento*> _history;
+	stack<IMemento*> _history;
 	Exchange* _exchange;
 public:
 	Memory(Exchange* exchange) : _exchange(exchange) {}
 
-	void Backup();
-	void Undo();
+	void Backup();  // Writes to the memory stack the list that the save method will return, called on the exchange field.
+	void Undo();  // Check for snapshots in memory.
 };

@@ -5,7 +5,7 @@
 
 using namespace std;
 
-#include "Memento.h"
+#include "IMemento.h"
 #include "ExchangeMemento.h"
 #include "Exchange.h"
 #include "Memory.h"

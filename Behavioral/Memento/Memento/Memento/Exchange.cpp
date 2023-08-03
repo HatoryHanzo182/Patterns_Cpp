@@ -10,10 +10,10 @@ void Exchange::Buy() { ++_euro; }
 
 ExchangeMemento* Exchange::Save() { return new ExchangeMemento(_dollars, _euro); }
 
-void Exchange::Restore(Memento* exchange_memento)
+void Exchange::Restore(IMemento* exchange_IMemento)
 {
-	_dollars = exchange_memento->GetDollars();
-	_euro = exchange_memento->GetEuro();
+	_dollars = exchange_IMemento->GetDollars();
+	_euro = exchange_IMemento->GetEuro();
 
-	delete exchange_memento;
+	delete exchange_IMemento;
 }

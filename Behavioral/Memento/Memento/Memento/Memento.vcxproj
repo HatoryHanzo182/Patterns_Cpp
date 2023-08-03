@@ -136,7 +136,7 @@
     <ClInclude Include="Exchange.h" />
     <ClInclude Include="ExchangeMemento.h" />
     <ClInclude Include="Header.h" />
-    <ClInclude Include="Memento.h" />
+    <ClInclude Include="IMemento.h" />
     <ClInclude Include="Memory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
