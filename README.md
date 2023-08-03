@@ -24,3 +24,4 @@ The factory method specifies the method that should be used instead of calling t
 5. Facade pattern - structural pattern that provides a simple (but stripped down) interface to a complex object system, library, or framework. In addition to reducing the overall complexity of a program, Facade also helps to bring code that depends on an external system into a single place.
 
 Each pattern is accompanied by a demo that shows its application in different situations.
+Learn more about patterns at https://refactoring.guru/en/design-patterns/cpp
